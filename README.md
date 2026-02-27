@@ -154,3 +154,93 @@ Configures communication channels such as REST API for web integration.
 🌐 endpoints.yml
 
 Defines service endpoints, including action server configuration.
+
+Epic 3 – Story 1: Data Collection – Creating User Queries (nlu.yml)
+📌 Objective
+
+The goal of this step was to define possible user queries and map them to appropriate intents. Since the chatbot provides quote recommendations, users may request different types of quotes such as motivational, inspirational, romantic, humorous, or success-related quotes.
+
+🧠 Defining Intents
+
+The following intents were created:
+
+greet
+
+motivation
+
+inspiration
+
+love
+
+funny
+
+success
+
+goodbye
+
+Each intent represents the purpose behind a user’s message.
+
+📝 Training Data Format
+
+User queries were defined in data/nlu.yml using YAML format:
+
+- intent: motivation
+  examples: |
+  - I need motivation
+  - motivate me
+  - give me a motivational quote
+
+Multiple example sentences were added for each intent to improve model understanding and classification accuracy.
+
+Epic 3 – Story 2: Defining Chatbot Responses (domain.yml)
+📌 Objective
+
+After defining user intents in nlu.yml, the next step was to configure chatbot responses in domain.yml. This file acts as the central configuration for mapping user intents to appropriate responses.
+
+🧠 Intents Configured
+
+The following intents were defined in the domain file:
+
+greet
+
+motivation
+
+inspiration
+
+love
+
+funny
+
+success
+
+goodbye
+
+💬 Response Mapping
+
+Each intent was mapped to a corresponding response using utter\_ actions.
+
+Example:
+
+utter_motivation:
+
+- text: "Push yourself, because no one else is going to do it for you."
+- text: "Great things never come from comfort zones."
+
+Multiple response variations were added for each category to:
+
+Avoid repetitive replies
+
+Improve user engagement
+
+Provide fresh quote recommendations
+
+🔄 Conversation Flow
+
+The conversation flow was defined in stories.yml, linking each intent to its respective response action.
+
+Example:
+
+- story: motivation path
+  steps:
+  - intent: motivation
+  - action: utter_motivation

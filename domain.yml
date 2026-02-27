@@ -2,32 +2,45 @@ version: "3.1"
 
 intents:
   - greet
+  - motivation
+  - inspiration
+  - love
+  - funny
+  - success
   - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
 
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
+    - text: "Hello! 😊 I can share motivational, inspirational, love, funny, or success quotes. What would you like today?"
 
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
+  utter_motivation:
+    - text: "Push yourself, because no one else is going to do it for you."
+    - text: "Don’t stop when you’re tired. Stop when you’re done."
+    - text: "Success starts with self-discipline."
 
-  utter_did_that_help:
-  - text: "Did that help you?"
+  utter_inspiration:
+    - text: "Believe you can and you're halfway there."
+    - text: "Dream big and dare to fail."
+    - text: "Start where you are. Use what you have. Do what you can."
 
-  utter_happy:
-  - text: "Great, carry on!"
+  utter_love:
+    - text: "Love is not about how many days you have been together, but how much you love each other every day."
+    - text: "Where there is love, there is life."
+    - text: "You don’t love someone for their looks, but for who they are."
+
+  utter_funny:
+    - text: "I'm not lazy, I'm on energy-saving mode."
+    - text: "Why don’t scientists trust atoms? Because they make up everything!"
+    - text: "Life is short. Smile while you still have teeth."
+
+  utter_success:
+    - text: "Success is not final, failure is not fatal: It is the courage to continue that counts."
+    - text: "Opportunities don’t happen. You create them."
+    - text: "Success usually comes to those who are too busy to be looking for it."
 
   utter_goodbye:
-  - text: "Bye"
-
-  utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+    - text: "Goodbye! 👋 Stay positive and come back for more quotes!"
+    - text: "See you soon! Keep shining ✨"
 
 session_config:
   session_expiration_time: 60
