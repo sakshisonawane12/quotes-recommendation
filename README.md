@@ -73,3 +73,84 @@ Supporting NLP libraries (TensorFlow, sklearn, etc.)
 rasa --version
 
 Successfully confirmed installation.
+
+Story 2: Setting Up the Rasa Project
+📌 Project Initialization
+
+After successfully installing Rasa, the project structure was initialized using the built-in Rasa command:
+
+rasa init
+
+This command automatically generated the default chatbot template along with all required directories and configuration files.
+
+📂 Project Structure Created
+
+After initialization, the following structure was generated:
+
+quotes-recommendation/
+│
+├── data/
+│ ├── nlu.yml
+│ ├── stories.yml
+│ ├── rules.yml
+│
+├── actions/
+├── models/
+├── tests/
+│
+├── config.yml
+├── domain.yml
+├── credentials.yml
+├── endpoints.yml
+📖 Description of Key Components
+📁 data/
+
+Contains training data files:
+
+nlu.yml – Defines user intents and example phrases.
+
+stories.yml – Defines conversation flow.
+
+rules.yml – Defines rule-based interactions.
+
+📁 actions/
+
+Used for defining custom backend logic and integrations.
+This will later support dynamic quote recommendation and API interaction.
+
+📁 models/
+
+Stores trained chatbot models generated after running:
+
+rasa train
+📁 tests/
+
+Used for storing test stories to validate chatbot behavior.
+
+⚙ config.yml
+
+Defines:
+
+NLU pipeline (how user input is processed)
+
+Dialogue policies (how responses are selected)
+
+🧠 domain.yml
+
+Defines:
+
+Intents
+
+Responses
+
+Actions
+
+Session configuration
+
+🔌 credentials.yml
+
+Configures communication channels such as REST API for web integration.
+
+🌐 endpoints.yml
+
+Defines service endpoints, including action server configuration.
