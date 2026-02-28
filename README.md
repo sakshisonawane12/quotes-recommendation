@@ -379,3 +379,49 @@ The model can be reused without retraining unless new training data is added.
 ✅ Outcome
 
 The chatbot model is successfully stored and reusable for testing, deployment, and future scalability.
+
+Epic 4 – Story 1: Model Testing Using Rasa Shell
+📌 Objective
+
+The trained chatbot model was tested using the Rasa shell to validate intent classification accuracy and conversational behavior.
+
+⚙ Testing Command
+rasa shell
+
+The model was successfully loaded and interacted with via the command-line interface.
+
+🧪 Test Cases Executed
+
+The chatbot was tested with:
+
+Greetings (hi)
+
+Motivational requests
+
+Inspirational quotes
+
+Romantic/love quotes
+
+Funny content
+
+Success quotes
+
+Typographical variations (e.g., "sucess")
+
+Case variations (e.g., "Give me a romantic quote")
+
+🔍 Observations
+
+Correct intent recognition
+
+Appropriate quote category returned
+
+Response variations working properly
+
+Minor spelling errors handled successfully
+
+Smooth conversational flow
+
+✅ Outcome
+
+The chatbot successfully passed all functional tests in the Rasa shell environment, confirming accurate NLU classification and dialogue management.
