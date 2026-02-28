@@ -335,4 +335,47 @@ After successful training, the trained model was saved inside the models/ direct
 
 ✅ Outcome
 
-The chatbot model was successfully trained and is now capable of understanding user queries and responding appropriately.
+The chatbot model was successfully trained and is now capable of understanding user queries and responding appropriately
+
+Epic 3 – Story 5: Model Storage and Reusability
+📌 Objective
+
+After training, the generated chatbot model was stored in the models/ directory. This model file contains all learned patterns from NLU and dialogue training.
+
+📂 Model Storage
+
+After executing:
+
+rasa train
+
+The trained model was saved as a .tar.gz file inside:
+
+models/
+
+This file encapsulates:
+
+Intent classification logic
+
+Dialogue management policies
+
+Response mappings
+
+Configuration metadata
+
+🔁 Reusability
+
+The stored model can be:
+
+Loaded for testing
+
+Deployed on servers
+
+Integrated with web applications
+
+Retrained with updated data for improvements
+
+The model can be reused without retraining unless new training data is added.
+
+✅ Outcome
+
+The chatbot model is successfully stored and reusable for testing, deployment, and future scalability.
