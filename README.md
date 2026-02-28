@@ -502,3 +502,46 @@ Deploy the trained Rasa chatbot using a web-based interface for real-time intera
 - Real-time NLP-based quote responses
 - Professional animated UI
 - REST API integration working correctly
+
+## Epic 4 – Story 4: Validation of Deployed Chatbot
+
+### Objective
+
+Validate the deployed chatbot through the web interface to ensure proper functionality and stability.
+
+---
+
+## Validation Steps
+
+1. Started Rasa backend server:
+   rasa run --enable-api --cors "\*"
+
+2. Started frontend server:
+   python3 -m http.server 8000
+
+3. Opened browser:
+   http://localhost:8000
+
+4. Tested multiple user inputs:
+   - Motivation quotes
+   - Inspirational quotes
+   - Love quotes
+   - Funny quotes
+   - Success quotes
+   - Greetings and goodbye messages
+
+---
+
+## Validation Checks Performed
+
+✔ Verified frontend and backend connectivity  
+✔ Confirmed real-time response delivery  
+✔ Checked correct rendering of chatbot messages  
+✔ Tested continuous interaction for stability
+
+---
+
+## Result
+
+The chatbot successfully responded through the web interface with stable performance and correct NLP-based outputs.  
+System is ready for practical deployment.
