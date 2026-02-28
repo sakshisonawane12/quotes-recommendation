@@ -425,3 +425,42 @@ Smooth conversational flow
 ✅ Outcome
 
 The chatbot successfully passed all functional tests in the Rasa shell environment, confirming accurate NLU classification and dialogue management.
+
+Epic 4 – Story 2: Testing Using Test Stories
+📌 Objective
+
+Automated testing was performed using predefined test stories to validate chatbot behavior and ensure dialogue stability.
+
+⚙ Test Execution Command
+rasa test
+🧪 Test Coverage
+
+The following test cases were validated:
+
+Motivation requests
+
+Inspirational quotes
+
+Love quotes
+
+Funny content
+
+Success quotes
+
+Greetings
+
+Each test story verified that the correct intent and corresponding response action were executed.
+
+🔍 Purpose of Automated Testing
+
+Ensures response consistency
+
+Detects regression issues after retraining
+
+Validates dialogue management logic
+
+Improves chatbot robustness
+
+✅ Outcome
+
+The chatbot successfully passed automated dialogue tests, confirming stable and consistent conversational behavior.
