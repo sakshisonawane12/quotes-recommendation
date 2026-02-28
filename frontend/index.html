@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quotes Recommendation - SmartBrightSkillWallet</title>
+    <link rel="icon" type="image/svg+xml" href="logo.svg" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="particles" id="particles"></div>
+
+    <header class="header">
+      <div class="logo-container">
+        <div class="logo-icon">💡</div>
+        <div class="logo-text">
+          <h1>Quotes Recommendation Using NLP</h1>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="hero-section">
+        <h2 class="main-title">Discover Your Perfect Quote</h2>
+        <p class="subtitle">
+          AI-powered quote recommendations tailored to your mood
+        </p>
+      </div>
+
+      <div class="category-grid">
+        <div class="category-card" data-intent="motivation">
+          <div class="card-icon">🚀</div>
+          <h3>Motivation</h3>
+          <p>Fuel your drive</p>
+        </div>
+        <div class="category-card" data-intent="inspiration">
+          <div class="card-icon">✨</div>
+          <h3>Inspiration</h3>
+          <p>Spark creativity</p>
+        </div>
+        <div class="category-card" data-intent="love">
+          <div class="card-icon">❤️</div>
+          <h3>Love</h3>
+          <p>Romantic vibes</p>
+        </div>
+        <div class="category-card" data-intent="funny">
+          <div class="card-icon">😄</div>
+          <h3>Funny</h3>
+          <p>Lighten the mood</p>
+        </div>
+        <div class="category-card" data-intent="success">
+          <div class="card-icon">🏆</div>
+          <h3>Success</h3>
+          <p>Achieve greatness</p>
+        </div>
+      </div>
+
+      <div class="chat-section">
+        <div class="chat-container" id="chatContainer">
+          <div class="welcome-message">
+            <div class="bot-avatar">🤖</div>
+            <div class="message-bubble bot-message">
+              <p>
+                Hello! I'm your AI quote assistant. Choose a category above or
+                type your request below!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="input-container">
+          <input
+            type="text"
+            id="userInput"
+            placeholder="Ask me for a quote..."
+          />
+          <button id="sendBtn">
+            <span>Send</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M22 2L11 13M22 2L15 22L11 13M22 2L2 9L11 13"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="quote-display" id="quoteDisplay">
+        <div class="quote-content">
+          <div class="quote-icon">"</div>
+          <p class="quote-text" id="quoteText"></p>
+          <div class="quote-category" id="quoteCategory"></div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p>Powered by Rasa NLP</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

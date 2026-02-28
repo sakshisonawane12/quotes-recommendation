@@ -464,3 +464,41 @@ Improves chatbot robustness
 ✅ Outcome
 
 The chatbot successfully passed automated dialogue tests, confirming stable and consistent conversational behavior.
+
+## Epic 4 – Story 3: Deployment Using Web Interface
+
+### Objective
+
+Deploy the trained Rasa chatbot using a web-based interface for real-time interaction.
+
+---
+
+## Steps Performed
+
+1. Enabled REST channel in `credentials.yml`.
+
+2. Started Rasa server using:
+   rasa run --enable-api --cors "\*"
+
+3. Developed frontend using:
+   - HTML
+   - CSS (Animated UI)
+   - JavaScript (API integration)
+
+4. Connected frontend to Rasa REST API:
+   http://localhost:5005/webhooks/rest/webhook
+
+5. Started frontend server using:
+   python3 -m http.server 8000
+
+6. Accessed chatbot in browser:
+   http://localhost:8000
+
+---
+
+## Result
+
+- Chatbot successfully deployed on web interface
+- Real-time NLP-based quote responses
+- Professional animated UI
+- REST API integration working correctly
