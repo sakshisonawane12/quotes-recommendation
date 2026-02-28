@@ -244,3 +244,95 @@ Example:
   steps:
   - intent: motivation
   - action: utter_motivation
+
+  Epic 3 – Story 3: Defining Interaction Between User and Chatbot (stories.yml)
+  📌 Objective
+
+After defining intents (nlu.yml) and responses (domain.yml), the next step was to design the conversational flow of the chatbot using stories.yml.
+
+Stories define how the chatbot should respond to specific user intents in a structured conversation pattern.
+
+🧠 Conversation Flow Design
+
+Each story represents a sample interaction between the user and the chatbot.
+
+A story consists of:
+
+A user intent
+
+A corresponding bot action (response)
+
+Example:
+
+- story: motivation flow
+  steps:
+  - intent: motivation
+  - action: utter_motivation
+
+This ensures that whenever the user expresses a motivational intent, the chatbot responds with a motivational quote.
+
+💬 Interaction Patterns Implemented
+
+The following conversational flows were defined:
+
+greet → utter_greet
+
+motivation → utter_motivation
+
+inspiration → utter_inspiration
+
+love → utter_love
+
+funny → utter_funny
+
+success → utter_success
+
+goodbye → utter_goodbye
+
+These structured mappings ensure predictable and meaningful chatbot behavior.
+
+🎯 Importance of Stories
+
+Helps Rasa Core learn dialogue management
+
+Prevents random or inconsistent replies
+
+Maintains logical flow in conversation
+
+Improves user experience
+
+✅ Outcome
+
+The chatbot now follows a structured interaction pattern, responding logically to user requests and maintaining conversational consistency.
+
+Epic 3 – Story 4: Model Training
+📌 Objective
+
+After preparing the training data (nlu.yml), domain configuration (domain.yml), and conversation stories (stories.yml), the chatbot model was trained using Rasa’s built-in training command.
+
+⚙ Training Command
+rasa train
+
+This command trained both:
+
+Natural Language Understanding (NLU)
+
+Dialogue Management (Rasa Core)
+
+🧠 During Training, The Model Learned To:
+
+Classify user intents
+
+Manage conversational context
+
+Map intents to appropriate responses
+
+Maintain structured dialogue flow
+
+📂 Model Output
+
+After successful training, the trained model was saved inside the models/ directory in .tar.gz format.
+
+✅ Outcome
+
+The chatbot model was successfully trained and is now capable of understanding user queries and responding appropriately.
